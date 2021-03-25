@@ -1,7 +1,7 @@
 {
-  "name": "Foodify-api",
+  "name": "dal-food-bank-api",
   "version": "1.0.0",
-  "description": "REST API endpoints ",
+  "description": "REST API endpoints for Dalhousie Food Bank",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
@@ -28,6 +28,6 @@
     "nodemailer": "^6.4.10"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.7"
   }
 }
