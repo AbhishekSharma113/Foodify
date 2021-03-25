@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "dal-food-bank": {
+    "Foodify": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,14 +23,22 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "assets": ["src/favicon.ico", "src/apple-touch-icon.png", "src/robots.txt", "src/assets"],
+            "assets": [
+              "src/favicon.ico",
+              "src/apple-touch-icon.png",
+              "src/robots.txt",
+              "src/assets"
+            ],
             "styles": [
               "src/main.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/material-design-icons-iconfont/dist/material-design-icons.css"
             ],
             "stylePreprocessorOptions": {
-              "includePaths": ["src/styles", "src/theme"]
+              "includePaths": [
+                "src/styles",
+                "src/theme"
+              ]
             },
             "scripts": []
           },
@@ -88,7 +96,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "dal-food-bank:build"
+            "browserTarget": "-food-bank:build"
           }
         },
         "test": {
@@ -99,8 +107,15 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "scripts": [],
-            "styles": ["src/main.scss"],
-            "assets": ["src/favicon.ico", "src/apple-touch-icon.png", "src/robots.txt", "src/assets"]
+            "styles": [
+              "src/main.scss"
+            ],
+            "assets": [
+              "src/favicon.ico",
+              "src/apple-touch-icon.png",
+              "src/robots.txt",
+              "src/assets"
+            ]
           },
           "configurations": {
             "ci": {
@@ -112,8 +127,14 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["tsconfig.app.json", "tsconfig.spec.json", "e2e/tsconfig.json"],
-            "exclude": ["**/node_modules/**"]
+            "tsConfig": [
+              "tsconfig.app.json",
+              "tsconfig.spec.json",
+              "e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "e2e": {
@@ -131,7 +152,7 @@
       }
     }
   },
-  "defaultProject": "dal-food-bank",
+  "defaultProject": "Foodify",
   "cli": {
     "analytics": "64d2a0a2-1a75-40de-8b63-24322f8253ac"
   }

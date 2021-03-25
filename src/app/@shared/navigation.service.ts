@@ -1,4 +1,4 @@
- 
+
 
 import { Router } from '@angular/router';
 import { Injectable } from '@angular/core';
@@ -13,7 +13,7 @@ import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg
   providedIn: 'root',
 })
 export class NavigationService {
-  constructor(private _router: Router, private _titleService: Title) {}
+  constructor(private _router: Router, private _titleService: Title) { }
 
   getPrimaryNavigationItems(): NavItemModel[] {
     return [
@@ -46,19 +46,19 @@ export class NavigationService {
     return [
       {
         name: 'Facebook',
-        routeLink: 'https://www.facebook.com/dalstudentunion',
+        routeLink: 'https://www.facebook.com',
         isIcon: true,
         iconName: faFacebook,
       },
       {
         name: 'Twitter',
-        routeLink: 'https://twitter.com/DalStudentUnion',
+        routeLink: 'https://twitter.com',
         isIcon: true,
         iconName: faTwitter,
       },
       {
         name: 'Instagram',
-        routeLink: 'https://www.instagram.com/dalstudentunion/',
+        routeLink: 'https://www.instagram.com',
         isIcon: true,
         iconName: faInstagram,
       },
